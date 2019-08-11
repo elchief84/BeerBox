@@ -1,0 +1,523 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		22D07F3F8DD706C4356A934B /* Pods_beerbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 489335F68E5BFBBB0A6EE01E /* Pods_beerbox.framework */; };
+		D13732C42300B49B00C4D004 /* Beer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13732C32300B49B00C4D004 /* Beer.swift */; };
+		D13732C82300BAA200C4D004 /* Ingredient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13732C72300BAA200C4D004 /* Ingredient.swift */; };
+		D13732CA2300BBA700C4D004 /* Amount.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13732C92300BBA700C4D004 /* Amount.swift */; };
+		D13732CC2300C08F00C4D004 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = D13732CB2300C08F00C4D004 /* Common.swift */; };
+		D1550AA42300788300315057 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1550AA32300788300315057 /* AppDelegate.swift */; };
+		D1550AA92300788300315057 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1550AA72300788300315057 /* Main.storyboard */; };
+		D1550AAB2300788500315057 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D1550AAA2300788500315057 /* Assets.xcassets */; };
+		D1550AAE2300788500315057 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D1550AAC2300788500315057 /* LaunchScreen.storyboard */; };
+		D1AF72E42300817F006B2C50 /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72D72300817F006B2C50 /* LICENSE.txt */; };
+		D1AF72E52300817F006B2C50 /* Roboto-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72D82300817F006B2C50 /* Roboto-Black.ttf */; };
+		D1AF72E62300817F006B2C50 /* Roboto-BlackItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72D92300817F006B2C50 /* Roboto-BlackItalic.ttf */; };
+		D1AF72E72300817F006B2C50 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72DA2300817F006B2C50 /* Roboto-Bold.ttf */; };
+		D1AF72E82300817F006B2C50 /* Roboto-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72DB2300817F006B2C50 /* Roboto-BoldItalic.ttf */; };
+		D1AF72E92300817F006B2C50 /* Roboto-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72DC2300817F006B2C50 /* Roboto-Light.ttf */; };
+		D1AF72EA2300817F006B2C50 /* Roboto-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72DD2300817F006B2C50 /* Roboto-LightItalic.ttf */; };
+		D1AF72EB2300817F006B2C50 /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72DE2300817F006B2C50 /* Roboto-Medium.ttf */; };
+		D1AF72EC2300817F006B2C50 /* Roboto-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72DF2300817F006B2C50 /* Roboto-MediumItalic.ttf */; };
+		D1AF72ED2300817F006B2C50 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72E02300817F006B2C50 /* Roboto-Regular.ttf */; };
+		D1AF72EE2300817F006B2C50 /* Roboto-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72E12300817F006B2C50 /* Roboto-RegularItalic.ttf */; };
+		D1AF72EF2300817F006B2C50 /* Roboto-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72E22300817F006B2C50 /* Roboto-Thin.ttf */; };
+		D1AF72F02300817F006B2C50 /* Roboto-ThinItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D1AF72E32300817F006B2C50 /* Roboto-ThinItalic.ttf */; };
+		D1AF72F2230087E3006B2C50 /* BrowseBeerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF72F1230087E3006B2C50 /* BrowseBeerTableViewController.swift */; };
+		D1AF72F42300944F006B2C50 /* IngredientsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF72F32300944F006B2C50 /* IngredientsCell.swift */; };
+		D1AF72F623009485006B2C50 /* IngredientItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF72F523009485006B2C50 /* IngredientItemCell.swift */; };
+		D1AF72F8230094DD006B2C50 /* BeerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1AF72F7230094DD006B2C50 /* BeerCell.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		489335F68E5BFBBB0A6EE01E /* Pods_beerbox.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_beerbox.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5D94FDC119CA208E6841F3C /* Pods-beerbox.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beerbox.release.xcconfig"; path = "Target Support Files/Pods-beerbox/Pods-beerbox.release.xcconfig"; sourceTree = "<group>"; };
+		D13732C32300B49B00C4D004 /* Beer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Beer.swift; sourceTree = "<group>"; };
+		D13732C72300BAA200C4D004 /* Ingredient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredient.swift; sourceTree = "<group>"; };
+		D13732C92300BBA700C4D004 /* Amount.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Amount.swift; sourceTree = "<group>"; };
+		D13732CB2300C08F00C4D004 /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		D1550AA02300788300315057 /* beerbox.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = beerbox.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1550AA32300788300315057 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D1550AA82300788300315057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D1550AAA2300788500315057 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D1550AAD2300788500315057 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D1550AAF2300788500315057 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D1AF72D72300817F006B2C50 /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		D1AF72D82300817F006B2C50 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		D1AF72D92300817F006B2C50 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		D1AF72DA2300817F006B2C50 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		D1AF72DB2300817F006B2C50 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		D1AF72DC2300817F006B2C50 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		D1AF72DD2300817F006B2C50 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		D1AF72DE2300817F006B2C50 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		D1AF72DF2300817F006B2C50 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		D1AF72E02300817F006B2C50 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		D1AF72E12300817F006B2C50 /* Roboto-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-RegularItalic.ttf"; sourceTree = "<group>"; };
+		D1AF72E22300817F006B2C50 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		D1AF72E32300817F006B2C50 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		D1AF72F1230087E3006B2C50 /* BrowseBeerTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrowseBeerTableViewController.swift; sourceTree = "<group>"; };
+		D1AF72F32300944F006B2C50 /* IngredientsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsCell.swift; sourceTree = "<group>"; };
+		D1AF72F523009485006B2C50 /* IngredientItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientItemCell.swift; sourceTree = "<group>"; };
+		D1AF72F7230094DD006B2C50 /* BeerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerCell.swift; sourceTree = "<group>"; };
+		DD1E01A17F92EA14E11BAC3E /* Pods-beerbox.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-beerbox.debug.xcconfig"; path = "Target Support Files/Pods-beerbox/Pods-beerbox.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D1550A9D2300788300315057 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22D07F3F8DD706C4356A934B /* Pods_beerbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		6EADB7CE10FB576DB43315B9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DD1E01A17F92EA14E11BAC3E /* Pods-beerbox.debug.xcconfig */,
+				B5D94FDC119CA208E6841F3C /* Pods-beerbox.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		B9EC1FF39764A478D72A3ADD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				489335F68E5BFBBB0A6EE01E /* Pods_beerbox.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D13732C22300B42700C4D004 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF72F32300944F006B2C50 /* IngredientsCell.swift */,
+				D1AF72F523009485006B2C50 /* IngredientItemCell.swift */,
+				D1AF72F7230094DD006B2C50 /* BeerCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		D13732C52300B4A800C4D004 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF72F1230087E3006B2C50 /* BrowseBeerTableViewController.swift */,
+				D13732C22300B42700C4D004 /* Cells */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D13732C62300B4DD00C4D004 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D13732C32300B49B00C4D004 /* Beer.swift */,
+				D13732C72300BAA200C4D004 /* Ingredient.swift */,
+				D13732C92300BBA700C4D004 /* Amount.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D1550A972300788300315057 = {
+			isa = PBXGroup;
+			children = (
+				D1550AA22300788300315057 /* beerbox */,
+				D1550AA12300788300315057 /* Products */,
+				6EADB7CE10FB576DB43315B9 /* Pods */,
+				B9EC1FF39764A478D72A3ADD /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		D1550AA12300788300315057 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D1550AA02300788300315057 /* beerbox.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D1550AA22300788300315057 /* beerbox */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF72D62300817F006B2C50 /* fonts */,
+				D1550AA32300788300315057 /* AppDelegate.swift */,
+				D13732C62300B4DD00C4D004 /* Models */,
+				D13732C52300B4A800C4D004 /* ViewControllers */,
+				D13732CB2300C08F00C4D004 /* Common.swift */,
+				D1550AA72300788300315057 /* Main.storyboard */,
+				D1550AAA2300788500315057 /* Assets.xcassets */,
+				D1550AAC2300788500315057 /* LaunchScreen.storyboard */,
+				D1550AAF2300788500315057 /* Info.plist */,
+			);
+			path = beerbox;
+			sourceTree = "<group>";
+		};
+		D1AF72D62300817F006B2C50 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				D1AF72D72300817F006B2C50 /* LICENSE.txt */,
+				D1AF72D82300817F006B2C50 /* Roboto-Black.ttf */,
+				D1AF72D92300817F006B2C50 /* Roboto-BlackItalic.ttf */,
+				D1AF72DA2300817F006B2C50 /* Roboto-Bold.ttf */,
+				D1AF72DB2300817F006B2C50 /* Roboto-BoldItalic.ttf */,
+				D1AF72DC2300817F006B2C50 /* Roboto-Light.ttf */,
+				D1AF72DD2300817F006B2C50 /* Roboto-LightItalic.ttf */,
+				D1AF72DE2300817F006B2C50 /* Roboto-Medium.ttf */,
+				D1AF72DF2300817F006B2C50 /* Roboto-MediumItalic.ttf */,
+				D1AF72E02300817F006B2C50 /* Roboto-Regular.ttf */,
+				D1AF72E12300817F006B2C50 /* Roboto-RegularItalic.ttf */,
+				D1AF72E22300817F006B2C50 /* Roboto-Thin.ttf */,
+				D1AF72E32300817F006B2C50 /* Roboto-ThinItalic.ttf */,
+			);
+			path = fonts;
+			sourceTree = SOURCE_ROOT;
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D1550A9F2300788300315057 /* beerbox */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D1550AB22300788500315057 /* Build configuration list for PBXNativeTarget "beerbox" */;
+			buildPhases = (
+				90D3B776A2DEC2183A093730 /* [CP] Check Pods Manifest.lock */,
+				D1550A9C2300788300315057 /* Sources */,
+				D1550A9D2300788300315057 /* Frameworks */,
+				D1550A9E2300788300315057 /* Resources */,
+				2672E2A8ACA244C43E9393A1 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = beerbox;
+			productName = beerbox;
+			productReference = D1550AA02300788300315057 /* beerbox.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D1550A982300788300315057 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Vincenzo Romano";
+				TargetAttributes = {
+					D1550A9F2300788300315057 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = D1550A9B2300788300315057 /* Build configuration list for PBXProject "beerbox" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D1550A972300788300315057;
+			productRefGroup = D1550AA12300788300315057 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D1550A9F2300788300315057 /* beerbox */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D1550A9E2300788300315057 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1AF72E72300817F006B2C50 /* Roboto-Bold.ttf in Resources */,
+				D1AF72E42300817F006B2C50 /* LICENSE.txt in Resources */,
+				D1AF72EA2300817F006B2C50 /* Roboto-LightItalic.ttf in Resources */,
+				D1AF72E82300817F006B2C50 /* Roboto-BoldItalic.ttf in Resources */,
+				D1AF72EC2300817F006B2C50 /* Roboto-MediumItalic.ttf in Resources */,
+				D1AF72E62300817F006B2C50 /* Roboto-BlackItalic.ttf in Resources */,
+				D1AF72EE2300817F006B2C50 /* Roboto-RegularItalic.ttf in Resources */,
+				D1550AAE2300788500315057 /* LaunchScreen.storyboard in Resources */,
+				D1AF72EF2300817F006B2C50 /* Roboto-Thin.ttf in Resources */,
+				D1AF72E52300817F006B2C50 /* Roboto-Black.ttf in Resources */,
+				D1550AAB2300788500315057 /* Assets.xcassets in Resources */,
+				D1AF72EB2300817F006B2C50 /* Roboto-Medium.ttf in Resources */,
+				D1AF72F02300817F006B2C50 /* Roboto-ThinItalic.ttf in Resources */,
+				D1AF72ED2300817F006B2C50 /* Roboto-Regular.ttf in Resources */,
+				D1550AA92300788300315057 /* Main.storyboard in Resources */,
+				D1AF72E92300817F006B2C50 /* Roboto-Light.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2672E2A8ACA244C43E9393A1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-beerbox/Pods-beerbox-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-beerbox/Pods-beerbox-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-beerbox/Pods-beerbox-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		90D3B776A2DEC2183A093730 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-beerbox-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D1550A9C2300788300315057 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D1AF72F8230094DD006B2C50 /* BeerCell.swift in Sources */,
+				D13732C42300B49B00C4D004 /* Beer.swift in Sources */,
+				D13732C82300BAA200C4D004 /* Ingredient.swift in Sources */,
+				D13732CA2300BBA700C4D004 /* Amount.swift in Sources */,
+				D13732CC2300C08F00C4D004 /* Common.swift in Sources */,
+				D1550AA42300788300315057 /* AppDelegate.swift in Sources */,
+				D1AF72F42300944F006B2C50 /* IngredientsCell.swift in Sources */,
+				D1AF72F2230087E3006B2C50 /* BrowseBeerTableViewController.swift in Sources */,
+				D1AF72F623009485006B2C50 /* IngredientItemCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		D1550AA72300788300315057 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1550AA82300788300315057 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D1550AAC2300788500315057 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D1550AAD2300788500315057 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D1550AB02300788500315057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D1550AB12300788500315057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D1550AB32300788500315057 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DD1E01A17F92EA14E11BAC3E /* Pods-beerbox.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U74M2YS5GH;
+				INFOPLIST_FILE = beerbox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.enzoromano.beerbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D1550AB42300788500315057 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B5D94FDC119CA208E6841F3C /* Pods-beerbox.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U74M2YS5GH;
+				INFOPLIST_FILE = beerbox/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = eu.enzoromano.beerbox;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D1550A9B2300788300315057 /* Build configuration list for PBXProject "beerbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1550AB02300788500315057 /* Debug */,
+				D1550AB12300788500315057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D1550AB22300788500315057 /* Build configuration list for PBXNativeTarget "beerbox" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D1550AB32300788500315057 /* Debug */,
+				D1550AB42300788500315057 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D1550A982300788300315057 /* Project object */;
+}
